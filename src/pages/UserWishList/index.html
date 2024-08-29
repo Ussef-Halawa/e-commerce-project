@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clicon Dashboard</title>
+    <link rel="shortcut icon" href="../../assets/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main class="flex p-10 flex-col">
+        <div class="p-4 bg-white shadow rounded-md">
+            <caption >
+                <p class="text-lg font-semibold text-gray-900">
+                    Your Wish List
+                </p>
+                <p class="mt-1 text-sm font-normal text-gray-500">
+                    Keep track of your favorite items all in one place. Add products you love to your wish list and easily access them whenever you're ready to purchase.                </p>
+            </caption>
+        </div>        
+
+        <div class="relative overflow-x-auto w-full h-fit items-table">
+            <table class="w-full text-sm text-left shadow-md text-gray-500 ">
+                <thead class="text-xs text-white uppercase rounded-lg h-fit bg-blue-600">
+                    <tr>
+                        <th scope="col" class="px-16 py-3">
+                            <span class="sr-only">Image</span>
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Product
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Status
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            price
+                        </th>
+                        <th scope="col" class="flex px-6 py-3 justify-center">
+                            actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="wish-list-body">
+                    <tr class="bg-white border-b font-semibold text-black hover:bg-gray-50 items">
+                        <td class="p-4 w-1/5">
+                        </td>
+                        <td class="px-6 py-4 w-1/5">
+                        </td>
+                        <td class="px-6 py-4 w-1/5">
+                        </td>
+                        <td class="px-6 py-4 w-1/5">
+                        </td>
+                        <td class="px-6 py-4 1/5">
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="../../modules/userWishList.js"></script>
+</body>
+
+</html>
